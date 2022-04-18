@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Product</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container-flex">
+                <div class="row">
+                    <div class="header__logo">
+                            <a href="index.html" class="header__logo--image"><img class="header__logo--logotip" src="./image/logo/logo.svg" alt="menu"></a>
+                            <a href="#" class="header__logo--title"><span>MB</span> HOUSE</a>
+                            <a href="#" class="header__logo--items">Online Store</a>    
+                    </div>
+                    <div class="header__navigation">
+                        <nav>
+                            <ul class="header__menu">
+                                <li class="header__menu--link"><a href="#" class="header__menu--title">Choose My Vehicle</a></li>
+                                <li class="header__menu--link"><a href="#" class="header__menu--title">My Account</a></li>
+                                <li class="header__menu--link"><a href="#" class="header__menu--title">Partnership</a></li>
+                                <li class="header__menu--link"><a href="#" class="header__menu--title">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu-drop">
+                        <div class="menu-mobile">
+                            <button onclick="myFunction()" class="dropbtn"></button>
+                              <div id="myDropdown" class="menu-content">
+                                <a href="#" class="menu-content__list">Choose My Vehicle</a>
+                                <a href="#" class="menu-content__list">My Account</a>
+                                <a href="#" class="menu-content__list">Partnership</a>
+                                <a href="#" class="menu-content__list">Contact Us</a>
+                              </div>
+                            </div>
+                            
+                            <script>
+    
+                            function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                            }
+                            
+    
+                            window.onclick = function(event) {
+                              if (!event.target.matches('.dropbtn')) {
+                            
+                                var dropdowns = document.getElementsByClassName("menu-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                  var openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              }
+                            }
+                            </script>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="drop">
+                        <img src="./image/icon/currency-icon.svg" alt="currency-icon" class="drop__image">
+                        <ul>
+                            <li class="drop__list">
+                                <a href="index.html" class="drop__list--title">$CAD</a>
+                                <ul class="drop__list--ul">
+                                    <li>
+                                        <a href="course.html" class="drop__list--title">€CAD</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="./image/icon/arrow.svg" alt="arrow" class="drop__arrow">
+                    </div>
+                    <button class="header__shopping">
+                        <img src="./image/icon/cart.svg" alt="cart" class="header__shopping--image">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="content">
+                    <div class="wrap">
+                        <div class="wrap-product">
+                            <p><img src="./image/icon/arrow-left.svg" alt="arrow-left"> Back to ECU Tuning Products</p>
+                            <img src="./image/gallery/product-gallery.svg" alt="product-gallery" class="wrap-product__gallery">
+                        </div>
+                        <div class="box">
+                            <div class="box-one">
+                                <div class="box-one__bottom">
+                                    <p class="box-one__bottom--text"><img src="./image/icon/rectangle.svg" alt="" class="box-one__bottom--image">Performance Downpipes</p>
+                                    <div class="box-one__button">
+                                        <button class="box-one__button--item">C300</button>
+                                        <button class="box-one__button--item">C400</button>
+                                        <button class="box-one__button--item">C450</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text">$1325,00</h4>
+                                </div>
+                            </div>
+                            <div class="box-two">
+                                <div class="box-input">
+                                    <p class="box-input__title">Quantity:</p>
+                                    <select class="box-input__select">
+                                        <option name="ren" id="0">1</option>
+                                        <option name="tan" id="1">2</option>
+                                    </select>
+                                </div>
+                                <div class="box-button">
+                                    <button class="box-button__parameters">
+                                        <a href="" class="box-button__parameters--item">Add to Cart</a>
+                                    </button>
+                                    <p class="box-button__title">+ Add to wishlist</p>
+                                </div>
+                            </div>
+                            <div class="box-three">
+                                <p class="box-three__title">Options:</p>
+                                <select class="box-three__select">
+                                    <option name="ren" id="0">Option 1</option>
+                                    <option name="tan" id="1">2</option>
+                                    <option name="tan" id="2">3</option>
+                                </select>
+                            </div>
+                            <div class="box-four">
+                                <p class="box-four__title">Colors:</p>
+                                <div>
+                                    <img src="./image/color/color-one.svg" alt="">
+                                    <img src="./image/color/color-two.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="box-five">
+                                <p class="box-five__title">Variations & <br>
+                                   Addons:
+                                </p>
+                                <form action="" class="box-five__form">
+                                    <input type="checkbox" name="mycheck" value="1"/> Engine + Transmission Control Units Only  (Price: $300)<br/>
+                                    <input type="checkbox" name="mycheck" value="2"/> Engine + Transmission Control Units Only  (Price: $300)<br/>
+                                    <input type="checkbox" name="mycheck" value="3"/> Engine + Transmission Control Units Only  (Price: $300)
+                                </form>
+                            </div>
+                            <div class="box-footer">
+                                <p class="box-footer__title">For any questions, send us an email at</p>
+                                <a href="#" class="box-footer__text"><i>store@mbhouse.ca</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="content">
+                    <div class="tabs">
+                        <div class="tabs__content"><p class="tabs__content--text">Stage 1</p></div>
+                        <div class="tabs__content"><p class="tabs__content--title">Stage 2</p></div>
+                        <div class="tabs__content"><p class="tabs__content--item">Fitment information</p></div>
+                    </div>
+                    <div class="square">
+                        <div class="square-one">
+                            <div>
+                                <p class="box-one__bottom--text"><img src="./image/icon/rectangle.svg" alt="" class="box-one__bottom--image">OM651.250 - 2.1L I4 Turbo Diesel - Stage 1</p>
+                            </div>
+                            <div class="arrow-menu">
+                                <div class="arrow-flex">
+                                    <img src="./image/gallery/arrow-hp.svg" alt="arrow-hp" class="arrow-flex__hp">
+                                    <div class="arrow-flex__one">
+                                        <p class="arrow-flex__one--title">Stock <img src="./image/icon/dashed-line.svg" alt="" class="arrow-flex__one--image"></p>
+                                        <button class="arrow-flex__one--item">
+                                            195 hp
+                                        </button>
+                                    </div>
+                                    <div class="arrow-flex__one">
+                                        <p class="arrow-flex__one--title">TUNED <img src="./image/icon/dashed-line.svg" alt="" class="arrow-flex__one--image"></p>
+                                        <button class="arrow-flex__one--item">
+                                            45 hp
+                                        </button>
+                                    </div>
+                                    <div class="arrow-flex__one">
+                                        <p class="arrow-flex__one--title">GAINS</p>
+                                        <button class="arrow-flex__one--item">
+                                            240 hp
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="arrow-flex">
+                                    <img src="./image/gallery/arrow-torque.svg" alt="arrow-torque" class="arrow-flex__hp">
+                                    <div class="arrow-flex__one">
+                                        <p class="arrow-flex__one--title">Stock <img src="./image/icon/dashed-line.svg" alt="" class="arrow-flex__one--image"></p>
+                                        <button class="arrow-flex__one--item">
+                                            500 nm
+                                        </button>
+                                    </div>
+                                    <div class="arrow-flex__one">
+                                        <p class="arrow-flex__one--title">TUNED <img src="./image/icon/dashed-line.svg" alt="" class="arrow-flex__one--image"></p>
+                                        <button class="arrow-flex__one--item">
+                                            50 nm
+                                        </button>
+                                    </div>
+                                    <div class="arrow-flex__one">
+                                        <p class="arrow-flex__one--title">GAINS</p>
+                                        <button class="arrow-flex__one--item">
+                                            550 nm
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-two">
+                                <p class="box-one__bottom--text"><img src="./image/icon/rectangle.svg" alt="" class="box-one__bottom--image">Graph</p>
+                                <p class="square-two__title">not available</p>
+                            </div>
+                            <p class="box-one__bottom--text"><img src="./image/icon/rectangle.svg" alt="" class="box-one__bottom--image">Parts Required</p>
+
+                            <div class="square-three">
+                                <div class="square-three__box">
+                                    <img src="./image/gallery/candle.svg" alt="candle" class="square-three__box--image">
+                                    <p class="square-three__box--title">
+                                        (Recommended)<br>
+                                        Performance Spark Plugs <br>
+                                        (2-step colder)
+                                    </p>
+                                </div>
+                                <div class="square-three__box">
+                                    <img src="./image/gallery/candle.svg" alt="candle" class="square-three__box--image">
+                                    <p class="square-three__box--title">
+                                        (Recommended)<br>
+                                        Performance Spark Plugs <br>
+                                        (2-step colder)
+                                    </p>
+                                </div>
+                                <div class="square-three__box">
+                                    <img src="./image/gallery/candle.svg" alt="candle" class="square-three__box--image">
+                                    <p class="square-three__box--title">
+                                        (Recommended)<br>
+                                        Performance Spark Plugs <br>
+                                        (2-step colder)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-footer">
+                                <p class="box-footer__title">For any questions, send us an email at</p>
+                                <a href="#" class="box-footer__text"><i>store@mbhouse.ca</i></a>
+                            </div>
+                        </div>
+                        <div class="square-button">
+                                <button class="box-button__parameters">
+                                    <a href="" class="box-button__parameters--item">Add to Cart</a>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="content">
+                    <div class="box-title">
+                        <div class="box-title__item">
+                            <p class="box-one__bottom--text"><img src="./image/icon/rectangle.svg" alt="" class="box-one__bottom--image">makes a Combo with</p>
+                        </div>
+                        <div>
+                            <p class="box-one__bottom--text"><img src="./image/icon/rectangle.svg" alt="" class="box-one__bottom--image">Related Products</p>
+                        </div>
+                    </div>
+                    <div class="primaru-box">
+                        <div class="primaru-box__one">
+                            <img src="./image/product/product-one.svg" alt="" class="primaru-box__one--image">
+                            <div class="primaru-box__two">
+                                <p class="primaru-box__two--title">360 Camera while driving</p>
+                                <p class="primaru-box__two--text">$150</p>
+                                <div class="box-one__button">
+                                    <button class="box-one__button--item">C300</button>
+                                    <button class="box-one__button--item">C400</button>
+                                    <button class="box-one__button--item">C450</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primaru-box__one">
+                            <img src="./image/product/product-two.svg" alt="" class="primaru-box__one--image">
+                            <div class="primaru-box__two">
+                                <p class="primaru-box__two--title">360 Camera while driving</p>
+                                <p class="primaru-box__two--text">$150</p>
+                                <div class="box-one__button">
+                                    <button class="box-one__button--item">C300</button>
+                                    <button class="box-one__button--item">C400</button>
+                                    <button class="box-one__button--item">C450</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primaru-box__one">
+                            <img src="./image/product/product-three.svg" alt="" class="primaru-box__one--image">
+                            <div class="primaru-box__two">
+                                <p class="primaru-box__two--title">M276 ECU Tune</p>
+                                <p class="primaru-box__two--text">Start at C$1,425</p>
+                                <div class="box-one__button">
+                                    <button class="box-one__button--item">C300</button>
+                                    <button class="box-one__button--item">C400</button>
+                                    <button class="box-one__button--item">C450</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primaru-box__one">
+                            <img src="./image/product/product-four.svg" alt="" class="primaru-box__one--image">
+                            <div class="primaru-box__two">
+                                <p class="primaru-box__two--title">360 Camera while driving</p>
+                                <p class="primaru-box__two--text">Start at C$1,425</p>
+                                <div class="box-one__button">
+                                    <button class="box-one__button--item">C300</button>
+                                    <button class="box-one__button--item">C400</button>
+                                    <button class="box-one__button--item">C450</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primaru-box__one">
+                            <img src="./image/product/product-five.svg" alt="" class="primaru-box__one--image">
+                            <div class="primaru-box__two">
+                                <p class="primaru-box__two--title">360 Camera while driving</p>
+                                <p class="primaru-box__two--text">$150</p>
+                                <div class="box-one__button">
+                                    <button class="box-one__button--item">C300</button>
+                                    <button class="box-one__button--item">C400</button>
+                                    <button class="box-one__button--item">C450</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="footer">
+                    <a href="#" class="footer-logo"><span>MB</span>HOUSE</a>
+                    <div class="footer-title">
+                        <div class="footer-title__text">
+                            <a href="#" class="footer-title__text--item">Services</a>
+                            <a href="#" class="footer-title__text--item">Online Store</a>
+                        </div>
+                        <div class="footer-title__text">
+                            <a href="#" class="footer-title__text--item">Partnership</a>
+                            <a href="#" class="footer-title__text--item">Contact Us</a>
+                        </div>
+                        <div class="footer-title__text">
+                            <a href="#" class="footer-title__text--item">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class=" footer-info">
+                        <div class="footer-info__networck">
+                            <img src="./image/social-network/facebook-icon.svg" alt="facebook-icon" class="footer-info__networck--icon">
+                            <img src="./image/social-network/inst-icon.svg" alt="" class="footer-info__networck--insta">
+                        </div>
+                        <div class="footer-info__box">
+                            <a href="#" target="blanc" class="footer-info__box--phone"><img src="./image/icon/phone.svg" alt="phone"> +1 (647) 875 - 8785</a>
+                            <a href="#" target="blanc" class="footer-info__box--geolocation"><img src="./image/icon/geolocation.svg" alt="geolocation">Unit 40, 101 Toro Rd <br>
+                                North York, ON, Canada, M3J2Z1</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-text">
+                    <p class="footer-text__title">
+                        Copyright © 2021 MB House, Inc.<br>
+                        Mercedes-Benz logo is a trademarks™ or registered® trademark of Daimler AG.
+                        Its use does not imply any affiliation with or endorsement by Daimler AG and 
+                        Mercedes-Benz
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
